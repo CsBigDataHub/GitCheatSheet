@@ -10,6 +10,9 @@ Git Cheat Sheet
 ===============
 ### Index
 * [Set Up](#setup)
+* [Set Up Editor](#git-editor)
+* [Set Up DIFF tool](#diff-tool)
+* [Set Up Merge Tool](#merge-tool)
 * [Configuration Files](#configuration-files)
 * [Create](#create)
 * [Local Changes](#local-changes)
@@ -71,7 +74,7 @@ git commit --amend --reset-author
 ```shell
  git config --global color.ui auto
 ```
-
+## GIT Editor
 ##### Set global editor
 * **For Windows**
 _Visual Studio Code as Git Global Editor_
@@ -90,7 +93,7 @@ _Visual Studio Code as Git Global Editor_
 ```shell
 git config --global core.editor "code --wait"
 ```
-
+## DIFF Tool
 ##### Set global Diff tool
 _Visual Studio Code as Git Global Diff tool_
 - Add the below code in git config file. Please see [Configuration Files](#configuration-files) to find the config files.
@@ -119,7 +122,7 @@ _Note : Make sure you have the path right_
     cmd = /Applications/IntelliJ\\ IDEA.app/Contents/MacOS/idea diff $(cd $(dirname "$LOCAL") && pwd)/$(basename "$LOCAL") $(cd $(dirname "$REMOTE") && pwd)/$(basename "$REMOTE")
 ```
 
-
+## Merge Tool
 ##### Set global Merge tool
 _IntelliJ IDEA as Git Global Diff tool_
 * For Windows
