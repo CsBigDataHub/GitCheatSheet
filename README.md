@@ -154,7 +154,7 @@ _IntelliJ IDEA as Git Global Diff tool_
 ~/.gitconfig
 ```
 
-##### System-wide configuration file [--system]:
+##### System-wide configuration file for unix servers [--system]:
 ```shell
 /etc/gitconfig
 ```
