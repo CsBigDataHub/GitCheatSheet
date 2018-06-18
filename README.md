@@ -93,7 +93,7 @@ git config --global core.editor "code --wait"
 
 ##### Set global Diff tool
 _Visual Studio Code as Git Global Diff tool_
-- Add the below code in git config file. Please see below where to find the config files.
+- Add the below code in git config file. Please see [Configuration Files](#configuration-files) to find the config files.
 ```shell
 [diff]
     tool = default-difftool
@@ -102,7 +102,7 @@ _Visual Studio Code as Git Global Diff tool_
 ```
 _IntelliJ IDEA as Git Global Diff tool_
 * For Windows
-     - Add the below code in git config file. Please see below where to find the config files.
+     - Add the below code in git config file. Please see [Configuration Files](#configuration-files) to find the config files.
 ```shell
 [diff]
     tool = intellij
@@ -111,7 +111,7 @@ _IntelliJ IDEA as Git Global Diff tool_
 ```
 _Note : Make sure you have the path right_
 * For MAC
-    - Add the below code in git config file. Please see below where to find the config files.
+    - Add the below code in git config file. Please see [Configuration Files](#configuration-files) to find the config files.
 ```shell
 [diff]
     tool = intellij
@@ -123,7 +123,7 @@ _Note : Make sure you have the path right_
 ##### Set global Merge tool
 _IntelliJ IDEA as Git Global Diff tool_
 * For Windows
-     - Add the below code in git config file. Please see below where to find the config files.
+     - Add the below code in git config file. Please see [Configuration Files](#configuration-files) to find the config files.
 ```shell
 [merge]
     tool = intellij
@@ -132,7 +132,7 @@ _IntelliJ IDEA as Git Global Diff tool_
     trustExitCode = true
 ```
 * For MAC
-    - Add the below code in git config file. Please see below where to find the config files.
+    - Add the below code in git config file. Please see [Configuration Files](#configuration-files) to find the config files.
 ```shell
 [merge]
     tool = intellij
