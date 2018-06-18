@@ -333,6 +333,14 @@ _Better Vesion of git log :_
 git log --oneline --graph --decorate --all
 ```
 
+##### Show log with user info
+```shell
+git log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+
+#Git log with time
+git log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+```
+
 ##### Show all the commits(it'll show just the commit hash and the commit message):
 ```shell
  git log --oneline
