@@ -72,7 +72,7 @@ git commit --amend --reset-author
  git config --global color.ui auto
 ```
 
-##### Set global editor for commit
+##### Set global editor
 * **For Windows**
 _Visual Studio Code as Git Global Editor_
 ```shell
