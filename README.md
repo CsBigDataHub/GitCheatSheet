@@ -96,12 +96,24 @@ git config --global core.editor "code --wait"
 ## DIFF Tool
 ##### Set global Diff tool
 _Visual Studio Code as Git Global Diff tool_
-- Add the below code in git config file. Please see [Configuration Files](#configuration-files) to find the config files.
+    - Add the below code in git config file. Please see [Configuration Files](#configuration-files) to find the config files.
+- For MAC
 ```shell
 [diff]
-    tool = default-difftool
-[difftool "default-difftool"]
+    tool = vscode
+[difftool "vscode"]
     cmd = code --wait --diff $LOCAL $REMOTE
+```
+- For Windows
+    - Make sure you have the path right
+```shell
+[diff]
+    tool = vscode
+[difftool]
+    prompt = false
+[difftool "vscode"]
+    cmd = \"C:\\Program Files (x86)\\Microsoft VS Code\\Code.exe\" \"$LOCAL\" \"$REMOTE\" --diff --wait
+    trustExitCode = false
 ```
 _IntelliJ IDEA as Git Global Diff tool_
 * For Windows
