@@ -421,11 +421,15 @@ git log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --
  git checkout -b <branch>
 ```
 
-#### Checkout and create a new branch from existing commit
+##### Checkout and create a new branch from existing commit
 ```shell
  git checkout <commit-hash> -b <new_branch_name>
 ```
 
+##### Creates and checks out "feature" branch that tracks "origin/feature"
+```shell
+git checkout -t origin/feature
+```
 ##### Create a new branch based on your current HEAD:
 ```shell
  git branch <new-branch>
@@ -643,12 +647,21 @@ squash <commit_id3>
 ## Alias
 
 ```shell
+git config --global alias.cl clone
 git config --global alias.st status #aliasing status as st
 git config --global alias.co checkout
+git config --global alias.cob "checkout -b"
 git config --global alias.ci commit
+git config --global alias.cm "commit -m"
 git config --global alias.br branch
 git config --global alias.dfs "diff --staged" #since it has space in it we padded with double quotes
 git config --global alias.logg "log --graph --decorate --oneline --abbrev-commit --all"
+git config --global alias.logs "log --color --graph --pretty=format:'%C(bold red)[%h]%Creset -%C(reverse cyan)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit" #Formatted log with user name displayed
+```
+
+##### List git aliases
+```shell
+git config --list | grep alias
 ```
 
 <hr>
